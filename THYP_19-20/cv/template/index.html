@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CV - THYP</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="keywords" content="cv, thyp, m2, p8">
+<meta name="description" content="CV dynamique des élèves de la promo M2 THYP de l'Université Paris 8 ">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="images/favicon.png" type="image/png">
+<link rel="stylesheet" type="text/css" href="styles/bootstrap-4.1.2/bootstrap.min.css">
+<link href="plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="plugins/mCustomScrollbar/jquery.mCustomScrollbar.css">
+<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.carousel.css">
+<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.theme.default.css">
+<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/animate.css">
+<link rel="stylesheet" type="text/css" href="styles/main_styles.css">
+<link rel="stylesheet" type="text/css" href="styles/responsive.css">
+</head>
+<body>
+
+	<div class="first_super_container">
+		
+		<!-- Header -->
+
+		<header class="header">
+			<div class="header_content d-flex flex-row align-items-center justify-content-start">
+				<div class="logo">CV<span>.</span><a href="#" id="getStats"></a></div>
+			</div>
+				
+			<!-- Menu -->
+			<div class="menu">
+				<div class="menu_content d-flex flex-row align-items-start justify-content-end">
+					<div class="hamburger ml-auto">classroom</div>
+					<div class="menu_nav text-right mCustomScrollbar">
+						<ul id="classroom">
+						</ul>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<div class="content_container">
+			<div class="main_content_outer d-flex flex-xl-row flex-column align-items-start justify-content-start">
+
+				<!-- General Information -->
+				<div class="general_info flex-xl-column flex-md-row flex-column">
+					<div>
+						<div class="general_info_image">
+							<div class="background_image" style="background-image:url(images/p8.jpg)" id="photo"></div>
+							<div class="header_button_2" id="download_cv">
+								<a href="images/cv.pdf" target="_blank" id="cv">Download CV</a>
+								<div class="d-flex flex-column align-items-center justify-content-center"><img src="images/download.png" alt=""></div>
+							</div>
+						</div>
+					</div>
+					<div class="general_info_content">
+						<div class="general_info_content_inner" data-mcs-theme="minimal-dark">
+							<div class="general_info_title">General Information</div>
+							<ul class="general_info_list">
+								<li class="d-flex flex-row align-items-center justify-content-start">
+									<div class="general_info_icon d-flex flex-column align-items-start justify-content-center"><img src="images/icon_1.png" alt=""></div>
+									<div class="general_info_text">Name: <span id="name">Technologies de l'Hypermédia</span></div>
+								</li>
+								<li class="d-flex flex-row align-items-center justify-content-start">
+									<div class="general_info_icon d-flex flex-column align-items-start justify-content-center"><img src="images/icon_3.png" alt=""></div>
+									<div class="general_info_text"><a href="mailto:hyper@hymedia.univ-paris8.fr" id="mail">hyper@hymedia.univ-paris8.fr</a></div>
+								</li>
+								<span id="veille">
+									<li class="d-flex flex-row align-items-center justify-content-start">
+										<div class="general_info_icon d-flex flex-column align-items-start justify-content-center"><img src="images/icon_5.png" alt=""></div>
+										<div class="general_info_text">Netvibes: <span id="netvibes"></span></div>
+									</li>
+									<li class="d-flex flex-row align-items-center justify-content-start">
+										<div class="general_info_icon d-flex flex-column align-items-start justify-content-center"><img src="images/icon_11.png" alt=""></div>
+										<div class="general_info_text">Diigo: <a href="#" target="_blank" id="diigo"></a></div>
+									</li>
+								</span>
+							</ul>
+
+							<!-- Social -->
+							<div class="social_container">
+								<ul class="d-flex flex-row align-items-start justify-content-start">
+									<li><a href="https://github.com/YasminaDev" target="_blank" id="git"><i class="fa fa-github-square" aria-hidden="true"></i></a></li>
+									<li><a href="https://www.linkedin.com/in/yasminaelaziz/" target="_blank" id="linkedin"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+									<li><a href="#" target="_blank" id="skype"><i class="fa fa-skype" aria-hidden="true"></i></a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Main Content -->
+
+				<div class="main_content">
+					<div class="main_title_container d-flex flex-column align-items-start justify-content-end">
+						<div class="main_subtitle" id="job">Master 2</div>
+						<div class="main_title" id="big_name">THYP</div>
+					</div>
+					<div class="main_content_scroll" data-mcs-theme="minimal-dark">
+						<div class="about_content">
+							<div class="about_title">Description</div>
+							<div class="about_text">
+								<p id="description">
+									Ce Master permet aux étudiants d’acquérir des compétences variées et complémentaires leur permettant de s’adapter dans les meilleures conditions à la plupart des missions industrielles et/ou de recherche.
+									<br><br>
+								</p>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+	<div class="super_container" id="skills">
+		<div class="content_container">
+			<div class="main_content_outer d-flex flex-xl-row flex-column align-items-start justify-content-start">
+
+				<!-- Main Content -->
+
+				<div class="main_section">
+					<div class="main_title_container d-flex flex-column align-items-start justify-content-end">
+						<div class="main_subtitle">What I am good at</div>
+						<div class="main_title">My Skills</div>
+					</div>
+					<div class="main_section_content" data-mcs-theme="minimal-dark">
+
+						<!-- Skills Content -->
+						<div class="skills">
+
+							<!-- Progress Bars -->
+							<div class="progress_bars">
+								<div class="container-fluid">
+									<div class="row">
+
+										<!-- Progress Bar -->
+										<div class="col-xl-4 col-lg-6 pb_col" id="skill_1_pbar_section">
+											<div class="pb_item">
+												<div class="p_bar_title">Jenkins</div>
+												<div id="skill_1_pbar" class="skill_bars" data-perc="0.70" data-name="skill_1_pbar" data-color-start="#79ccff" data-color-end="#9b74ff"></div>
+											</div>
+										</div>
+
+										<!-- Progress Bar -->
+										<div class="col-xl-4 col-lg-6 pb_col" id="skill_2_pbar_section">
+											<div class="pb_item">
+												<div class="p_bar_title">Hibernate</div>
+												<div id="skill_2_pbar" class="skill_bars" data-perc="0.60" data-name="skill_2_pbar" data-color-start="#ff4646" data-color-end="#ff26d9"></div>
+											</div>
+										</div>
+
+										<!-- Progress Bar -->
+										<div class="col-xl-4 col-lg-6 pb_col" id="skill_3_pbar_section">
+											<div class="pb_item">
+												<div class="p_bar_title">Bootstrap</div>
+												<div id="skill_3_pbar" class="skill_bars" data-perc="0.75" data-name="skill_3_pbar" data-color-start="#0054ff" data-color-end="#ff23d3"></div>
+											</div>
+										</div>
+
+										<!-- Progress Bar -->
+										<div class="col-xl-4 col-lg-6 pb_col" id="skill_4_pbar_section">
+											<div class="pb_item">
+												<div class="p_bar_title">Laravel</div>
+												<div id="skill_4_pbar" class="skill_bars" data-perc="1.0" data-name="skill_4_pbar" data-color-start="#79ff7c" data-color-end="#ffbd4a"></div>
+											</div>
+										</div>
+
+										<!-- Progress Bar -->
+										<div class="col-xl-4 col-lg-6 pb_col" id="skill_5_pbar_section">
+											<div class="pb_item">
+												<div class="p_bar_title">Zend</div>
+												<div id="skill_5_pbar" class="skill_bars" data-perc="0.90" data-name="skill_5_pbar" data-color-start="#79ff8f" data-color-end="#7b74ff"></div>
+											</div>
+										</div>
+
+										<!-- Progress Bar -->
+										<div class="col-xl-4 col-lg-6 pb_col" id="skill_6_pbar_section">
+											<div class="pb_item">
+												<div class="p_bar_title">Angular</div>
+												<div id="skill_6_pbar" class="skill_bars" data-perc="1.0" data-name="skill_6_pbar" data-color-start="#ff2d72" data-color-end="#ffab79"></div>
+											</div>
+										</div>
+										<!-- Progress Bar -->
+										<div class="col-xl-4 col-lg-6 pb_col" id="skill_7_pbar_section">
+											<div class="pb_item">
+												<div class="p_bar_title">Flesk</div>
+												<div id="skill_7_pbar" class="skill_bars" data-perc="0.70" data-name="skill_7_pbar" data-color-start="#79ccff" data-color-end="#9b74ff"></div>
+											</div>
+										</div>
+
+										<!-- Progress Bar -->
+										<div class="col-xl-4 col-lg-6 pb_col" id="skill_8_pbar_section">
+											<div class="pb_item">
+												<div class="p_bar_title">React</div>
+												<div id="skill_8_pbar" class="skill_bars" data-perc="0.60" data-name="skill_8_pbar" data-color-start="#ff4646" data-color-end="#ff26d9"></div>
+											</div>
+										</div>
+
+										<!-- Progress Bar -->
+										<div class="col-xl-4 col-lg-6 pb_col" id="skill_9_pbar_section">
+											<div class="pb_item">
+												<div class="p_bar_title">Vue</div>
+												<div id="skill_9_pbar" class="skill_bars" data-perc="0.75" data-name="skill_9_pbar" data-color-start="#0054ff" data-color-end="#ff23d3"></div>
+											</div>
+										</div>
+
+										<!-- Progress Bar -->
+										<div class="col-xl-4 col-lg-6 pb_col" id="skill_10_pbar_section">
+											<div class="pb_item">
+												<div class="p_bar_title">Symphony</div>
+												<div id="skill_10_pbar" class="skill_bars" data-perc="1.0" data-name="skill_10_pbar" data-color-start="#79ff7c" data-color-end="#ffbd4a"></div>
+											</div>
+										</div>
+
+										<!-- Progress Bar -->
+										<div class="col-xl-4 col-lg-6 pb_col" id="skill_11_pbar_section">
+											<div class="pb_item">
+												<div class="p_bar_title">Django</div>
+												<div id="skill_11_pbar" class="skill_bars" data-perc="0.90" data-name="skill_11_pbar" data-color-start="#79ff8f" data-color-end="#7b74ff"></div>
+											</div>
+										</div>
+
+										<!-- Progress Bar -->
+										<div class="col-xl-4 col-lg-6 pb_col" id="skill_12_pbar_section">
+											<div class="pb_item">
+												<div class="p_bar_title">.Net</div>
+												<div id="skill_12_pbar" class="skill_bars" data-perc="1.0" data-name="skill_12_pbar" data-color-start="#ff2d72" data-color-end="#ffab79"></div>
+											</div>
+										</div>
+
+									</div>
+								</div>
+							</div>
+
+									<!-- Loaders -->
+
+									<div class="loaders clearfix">
+
+										<!-- Loader -->
+										<div class="loader_container">
+											<div class="loader" data-perc="0.75" id="langue"></div>
+											<div class="loader_content text-center">
+												<div class="loader_title">Langue</div>
+												<div class="loader_subtitle">Niveau de maitrise</div>
+											</div>
+										</div>
+										
+										<!-- Loader -->
+										<div class="loader_container">
+											<div class="loader" data-perc="0.83" id="outil"></div>
+											<div class="loader_content text-center">
+												<div class="loader_title">Outil</div>
+												<div class="loader_subtitle">Niveau technique</div>
+											</div>
+										</div>
+										
+										<!-- Loader -->
+										<div class="loader_container">
+											<div class="loader" data-perc="0.25" id="competence"></div>
+											<div class="loader_content text-center">
+												<div class="loader_title">Competence</div>
+												<div class="loader_subtitle">Niveau d'habilité</div>
+											</div>
+										</div>
+										
+										<!-- Loader -->
+										<div class="loader_container">
+											<div class="loader" data-perc="0.83" id="besoin"></div>
+											<div class="loader_content text-center">
+												<div class="loader_title">Besoin</div>
+												<div class="loader_subtitle">Niveau de besoin</div>
+											</div>
+										</div>
+
+									</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="super_container" id="projects">
+		<div class="content_container">
+			<div class="main_content_outer d-flex flex-xl-row flex-column align-items-start justify-content-start">
+	
+				<!-- Main Content -->
+	
+				<div class="main_section">
+					<div class="main_title_container d-flex flex-column align-items-start justify-content-end">
+							<div class="main_subtitle">What I did</div>
+							<div class="main_title">My Projects</div>
+					</div>
+					<div class="main_section_content" data-mcs-theme="minimal-dark">
+
+							<div class="portfolio_grid clearfix">
+
+									<!-- Portfolio Item -->
+									<div class="portfolio_item p_design" id="project_1">
+										<img src="images/map.jpg" id="image_project_1" alt="">
+										<div class="portfolio_item_content d-flex flex-column align-items-center justify-content-center">
+											<div class="portfolio_item_link"><a href="https://yasminaelaziz.fr/7QUIZZ/" target="_blank" id="link_project_1"><i class="fa fa-plus"></i></a></div>
+										</div>
+									</div>
+			
+									<!-- Portfolio Item -->
+									<div class="portfolio_item p_photography" id="project_2">
+										<img src="images/chess.jpg" id="image_project_2" alt="">
+										<div class="portfolio_item_content d-flex flex-column align-items-center justify-content-center">
+											<div class="portfolio_item_link"><a href="https://github.com/YasminaDev/echecs" target="_blank" id="link_project_2"><i class="fa fa-plus"></i></a></div>
+										</div>
+									</div>
+			
+									<!-- Portfolio Item -->
+									<div class="portfolio_item p_brand" id="project_3">
+										<img src="images/compass.jpg" id="image_project_3" alt="">
+										<div class="portfolio_item_content d-flex flex-column align-items-center justify-content-center">
+											<div class="portfolio_item_link"><a href="https://github.com/YasminaDev/aventure" target="_blank" id="link_project_3"><i class="fa fa-plus"></i></a></div>
+										</div>
+									</div>
+			
+								</div>
+
+					</div>
+				</div>
+			</div>
+		</div>	
+	</div>
+
+	<div class="super_container" id="stats">
+		<div class="content_container">
+			<div class="main_content_outer d-flex flex-xl-row flex-column align-items-start justify-content-start">
+	
+				<!-- Main Content -->
+	
+				<div class="main_section">
+					<div class="main_title_container d-flex flex-column align-items-start justify-content-end">
+							<div class="main_subtitle">Global</div>
+							<div class="main_title">Statistics</div>
+					</div>
+					<div class="main_section_content" data-mcs-theme="minimal-dark">
+						
+						<!-- Sorting -->
+						<div class="portfolio_categories button-group filters-button-group mCustomScrollbar" id="stat_ls">
+							<ul id="stat_l">
+								<li class="portfolio_category" id="all">All</li>
+							</ul>
+						</div>
+
+						<!-- Testimonials -->
+						<div class="testimonials">
+						
+							<!-- Testimonials Slider -->
+							<div class="test_slider_container mCustomScrollbar scroller">
+								<div class="owl-carousel owl-theme test_slider" id="stat_g">
+
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>	
+	</div>
+	
+	<script src="https://d3js.org/d3.v5.min.js"></script>
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="styles/bootstrap-4.1.2/popper.js"></script>
+	<script src="styles/bootstrap-4.1.2/bootstrap.min.js"></script>
+	<script src="plugins/greensock/TweenMax.min.js"></script>
+	<script src="plugins/greensock/TimelineMax.min.js"></script>
+	<script src="plugins/scrollmagic/ScrollMagic.min.js"></script>
+	<script src="plugins/greensock/animation.gsap.min.js"></script>
+	<script src="plugins/greensock/ScrollToPlugin.min.js"></script>
+	<script src="plugins/progressbar/progressbar.js"></script>
+	<script src="plugins/mCustomScrollbar/jquery.mCustomScrollbar.js"></script>
+	<script src="plugins/easing/easing.js"></script>
+	<script src="plugins/parallax-js-master/parallax.min.js"></script>
+	<script src="plugins/OwlCarousel2-2.2.1/owl.carousel.js"></script>
+	<script src="js/custom.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>
