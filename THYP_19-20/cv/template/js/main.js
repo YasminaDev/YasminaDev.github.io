@@ -217,7 +217,6 @@ function changeData1(data){
     setFramework(data);
     setLanguage(data);
     setLangage(data);
-    setReseau(data);
     initLoaders();
     initProgressBars();
     closeMenu();
@@ -298,113 +297,18 @@ function getUrlImg(photo) {
 }
 
 function setBesoin(data){
+    var columns = dataForm1.columns;
     var total = 0;
     var nb = 0;
 
-    if(values[data["Quelles sont besoins ? [connaître les outils d’édition web (éditeurs html, CSS, …) ]"]]>1){
-        nb++;
-        total = total + values[data["Quelles sont besoins ? [connaître les outils d’édition web (éditeurs html, CSS, …) ]"]];
-    }
-    if(values[data["Quelles sont besoins ? [connaître les base du langage HTML 5]"]]>1){
-        nb++;
-        total = total + values[data["Quelles sont besoins ? [connaître les base du langage HTML 5]"]];
-    }
-    if(values[data["Quelles sont besoins ? [connaître les bases du responsive web design (RWD)]"]]>1){
-        nb++;
-        total = total + values[data["Quelles sont besoins ? [connaître les bases du responsive web design (RWD)]"]];
-    }
-    if(values[data["Quelles sont besoins ? [savoir scénariser et réaliser les rubriques « statiques » d’un site web]"]]>1){
-        nb++;
-        total = total + values[data["Quelles sont besoins ? [savoir scénariser et réaliser les rubriques « statiques » d’un site web]"]];
-    }
-    if(values[data["Quelles sont besoins ? [savoir scénariser et réaliser des rubriques multimédias (« page vidéo », « page photo », exposition virtuelle, …)]"]]>1){
-        nb++;
-        total = total + values[data["Quelles sont besoins ? [savoir scénariser et réaliser des rubriques multimédias (« page vidéo », « page photo », exposition virtuelle, …)]"]];
-    }
-    if(values[data["Quelles sont besoins ? [savoir utiliser des cartes géographiques interactives]"]]>1){
-        nb++;
-        total = total + values[data["Quelles sont besoins ? [savoir utiliser des cartes géographiques interactives]"]];
-    }
-    if(values[data["Quelles sont besoins ? [savoir travailler avec le RSS]"]]>1){
-        nb++;
-        total = total + values[data["Quelles sont besoins ? [savoir travailler avec le RSS]"]];
-    }
-    if(values[data["Quelles sont besoins ? [savoir utiliser correctement les métadonnées pour une meilleure diffusion des contenus du site]"]]>1){
-        nb++;
-        total = total + values[data["Quelles sont besoins ? [savoir utiliser correctement les métadonnées pour une meilleure diffusion des contenus du site]"]];
-    }
-    if(values[data["Quelles sont besoins ? [savoir utiliser les programmes de liens sponsorisés]"]]>1){
-        nb++;
-        total = total + values[data["Quelles sont besoins ? [savoir utiliser les programmes de liens sponsorisés]"]];
-    }
-    if(values[data["Quelles sont besoins ? [savoir utiliser des outils de gestion d’accès aux rubriques (accès par mot de passe, …)]"]]>1){
-        nb++;
-        total = total + values[data["Quelles sont besoins ? [savoir utiliser des outils de gestion d’accès aux rubriques (accès par mot de passe, …)]"]];
-    }
-    if(values[data["Quelles sont besoins ? [savoir mettre en place et gérer un forum de discussion]"]]>1){
-        nb++;
-        total = total + values[data["Quelles sont besoins ? [savoir mettre en place et gérer un forum de discussion]"]];
-    }
-    if(values[data["Quelles sont besoins ? [savoir mettre en place et gérer un service de type « newsletter » (impliquant la mise en place et la gestion d’un annuaire d’abonnés)]"]]>1){
-        nb++;
-        total = total + values[data["Quelles sont besoins ? [savoir mettre en place et gérer un service de type « newsletter » (impliquant la mise en place et la gestion d’un annuaire d’abonnés)]"]];
-    }
-    if(values[data["Quelles sont besoins ? [savoir mettre en place des enquêtes]"]]>1){
-        nb++;
-        total = total + values[data["Quelles sont besoins ? [savoir mettre en place des enquêtes]"]];
-    }
-    if(values[data["Quelles sont besoins ? [savoir mettre en place et exploiter des outils de veille d’information]"]]>1){
-        nb++;
-        total = total + values[data["Quelles sont besoins ? [savoir mettre en place et exploiter des outils de veille d’information]"]];
-    }
-    if(values[data["Quelles sont besoins ? [savoir mettre en place des outils de type « ranking »]"]]>1){
-        nb++;
-        total = total + values[data["Quelles sont besoins ? [savoir mettre en place des outils de type « ranking »]"]];
-    }
-    if(values[data["Quelles sont besoins ? [savoir intégrer, dans un page, des outils de diffusion web 2 (twitter, facebook, …)]"]]>1){
-        nb++;
-        total = total + values[data["Quelles sont besoins ? [savoir intégrer, dans un page, des outils de diffusion web 2 (twitter, facebook, …)]"]];
-    }
-    if(values[data["Quelles sont besoins ? [savoir faire fonctionner, sur un site, un service de type « e-commerce » (vente de produits, …)]"]]>1){
-        nb++;
-        total = total + values[data["Quelles sont besoins ? [savoir faire fonctionner, sur un site, un service de type « e-commerce » (vente de produits, …)]"]];
-    }
-    if(values[data["Quelles sont besoins ? [savoir réaliser et diffuser des e-publications : brochures, dépliants, publications multimédias, …]"]]>1){
-        nb++;
-        total = total + values[data["Quelles sont besoins ? [savoir réaliser et diffuser des e-publications : brochures, dépliants, publications multimédias, …]"]];
-    }
-    if(values[data["Quelles sont besoins ? [savoir réaliser des podcasts]"]]>1){
-        nb++;
-        total = total + values[data["Quelles sont besoins ? [savoir réaliser des podcasts]"]];
-    }
-    if(values[data["Quelles sont besoins ? [savoir gérer la publication à distance d’un site web]"]]>1){
-        nb++;
-        total = total + values[data["Quelles sont besoins ? [savoir gérer la publication à distance d’un site web]"]];
-    }
-    if(values[data["Quelles sont besoins ? [savoir gérer un site multilingue]"]]>1){
-        nb++;
-        total = total + values[data["Quelles sont besoins ? [savoir gérer un site multilingue]"]];
-    }
-    if(values[data["Quelles sont besoins ? [savoir gérer une communauté en ligne]"]]>1){
-        nb++;
-        total = total + values[data["Quelles sont besoins ? [savoir gérer une communauté en ligne]"]];
-    }
-    if(values[data["Quelles sont besoins ? [analyser des bases de données]"]]>1){
-        nb++;
-        total = total + values[data["Quelles sont besoins ? [analyser des bases de données]"]];
-    }
-    if(values[data["Quelles sont besoins ? [savoir prototyper des innovations numériques]"]]>1){
-        nb++;
-        total = total + values[data["Quelles sont besoins ? [savoir prototyper des innovations numériques]"]];
-    }
-    if(values[data["Quelles sont besoins ? [savoir gérer un projet]"]]>1){
-        nb++;
-        total = total + values[data["Quelles sont besoins ? [savoir gérer un projet]"]];
-    }
-    if(values[data["Quelles sont besoins ? [utiliser les méthodes agiles de développement]"]]>1){
-        nb++;
-        total = total + values[data["Quelles sont besoins ? [utiliser les méthodes agiles de développement]"]];
-    }
+    columns.forEach(function(element){
+        if(element.includes('Quelles sont besoins ?')){
+            if(values[data[element]]>1){
+                nb++;
+                total = total + values[data[element]];
+            }
+        }
+    });
 
     if(nb > 0)
         total = total/(3*nb);
@@ -413,113 +317,18 @@ function setBesoin(data){
 }
 
 function setCompetence(data){
+    var columns = dataForm1.columns;
     var total = 0;
     var nb = 0;
 
-    if(values[data["Quelles sont vos compétences ? [connaître les outils d’édition web (éditeurs html, CSS, …) ]"]]>1){
-        nb++;
-        total = total + values[data["Quelles sont vos compétences ? [connaître les outils d’édition web (éditeurs html, CSS, …) ]"]];
-    }
-    if(values[data["Quelles sont vos compétences ? [connaître les base du langage HTML 5]"]]>1){
-        nb++;
-        total = total + values[data["Quelles sont vos compétences ? [connaître les base du langage HTML 5]"]];
-    }
-    if(values[data["Quelles sont vos compétences ? [connaître les bases du responsive web design (RWD)]"]]>1){
-        nb++;
-        total = total + values[data["Quelles sont vos compétences ? [connaître les bases du responsive web design (RWD)]"]];
-    }
-    if(values[data["Quelles sont vos compétences ? [savoir scénariser et réaliser les rubriques « statiques » d’un site web]"]]>1){
-        nb++;
-        total = total + values[data["Quelles sont vos compétences ? [savoir scénariser et réaliser les rubriques « statiques » d’un site web]"]];
-    }
-    if(values[data["Quelles sont vos compétences ? [savoir scénariser et réaliser des rubriques multimédias (« page vidéo », « page photo », exposition virtuelle, …)]"]]>1){
-        nb++;
-        total = total + values[data["Quelles sont vos compétences ? [savoir scénariser et réaliser des rubriques multimédias (« page vidéo », « page photo », exposition virtuelle, …)]"]];
-    }
-    if(values[data["Quelles sont vos compétences ? [savoir utiliser des cartes géographiques interactives]"]]>1){
-        nb++;
-        total = total + values[data["Quelles sont vos compétences ? [savoir utiliser des cartes géographiques interactives]"]];
-    }
-    if(values[data["Quelles sont vos compétences ? [savoir travailler avec le RSS]"]]>1){
-        nb++;
-        total = total + values[data["Quelles sont vos compétences ? [savoir travailler avec le RSS]"]];
-    }
-    if(values[data["Quelles sont vos compétences ? [savoir utiliser correctement les métadonnées pour une meilleure diffusion des contenus du site]"]]>1){
-        nb++;
-        total = total + values[data["Quelles sont vos compétences ? [savoir utiliser correctement les métadonnées pour une meilleure diffusion des contenus du site]"]];
-    }
-    if(values[data["Quelles sont vos compétences ? [savoir utiliser les programmes de liens sponsorisés]"]]>1){
-        nb++;
-        total = total + values[data["Quelles sont vos compétences ? [savoir utiliser les programmes de liens sponsorisés]"]];
-    }
-    if(values[data["Quelles sont vos compétences ? [savoir utiliser des outils de gestion d’accès aux rubriques (accès par mot de passe, …)]"]]>1){
-        nb++;
-        total = total + values[data["Quelles sont vos compétences ? [savoir utiliser des outils de gestion d’accès aux rubriques (accès par mot de passe, …)]"]];
-    }
-    if(values[data["Quelles sont vos compétences ? [savoir mettre en place et gérer un forum de discussion]"]]>1){
-        nb++;
-        total = total + values[data["Quelles sont vos compétences ? [savoir mettre en place et gérer un forum de discussion]"]];
-    }
-    if(values[data["Quelles sont vos compétences ? [savoir mettre en place et gérer un service de type « newsletter » (impliquant la mise en place et la gestion d’un annuaire d’abonnés)]"]]>1){
-        nb++;
-        total = total + values[data["Quelles sont vos compétences ? [savoir mettre en place et gérer un service de type « newsletter » (impliquant la mise en place et la gestion d’un annuaire d’abonnés)]"]];
-    }
-    if(values[data["Quelles sont vos compétences ? [savoir mettre en place des enquêtes enligne]"]]>1){
-        nb++;
-        total = total + values[data["Quelles sont vos compétences ? [savoir mettre en place des enquêtes enligne]"]];
-    }
-    if(values[data["Quelles sont vos compétences ? [savoir mettre en place et exploiter des outils de veille d’information]"]]>1){
-        nb++;
-        total = total + values[data["Quelles sont vos compétences ? [savoir mettre en place et exploiter des outils de veille d’information]"]];
-    }
-    if(values[data["Quelles sont vos compétences ? [savoir mettre en place des outils de type « ranking »]"]]>1){
-        nb++;
-        total = total + values[data["Quelles sont vos compétences ? [savoir mettre en place des outils de type « ranking »]"]];
-    }
-    if(values[data["Quelles sont vos compétences ? [savoir intégrer, dans un page, des outils de diffusion web 2 (twitter, facebook, …)]"]]>1){
-        nb++;
-        total = total + values[data["Quelles sont vos compétences ? [savoir intégrer, dans un page, des outils de diffusion web 2 (twitter, facebook, …)]"]];
-    }
-    if(values[data["Quelles sont vos compétences ? [savoir faire fonctionner, sur un site, un service de type « e-commerce » (vente de produits, …)]"]]>1){
-        nb++;
-        total = total + values[data["Quelles sont vos compétences ? [savoir faire fonctionner, sur un site, un service de type « e-commerce » (vente de produits, …)]"]];
-    }
-    if(values[data["Quelles sont vos compétences ? [savoir réaliser et diffuser des e-publications : brochures, dépliants, publications multimédias, …]"]]>1){
-        nb++;
-        total = total + values[data["Quelles sont vos compétences ? [savoir réaliser et diffuser des e-publications : brochures, dépliants, publications multimédias, …]"]];
-    }
-    if(values[data["Quelles sont vos compétences ? [savoir réaliser des podcasts]"]]>1){
-        nb++;
-        total = total + values[data["Quelles sont vos compétences ? [savoir réaliser des podcasts]"]];
-    }
-    if(values[data["Quelles sont vos compétences ? [savoir gérer la publication à distance d’un site web]"]]>1){
-        nb++;
-        total = total + values[data["Quelles sont vos compétences ? [savoir gérer la publication à distance d’un site web]"]];
-    }
-    if(values[data["Quelles sont vos compétences ? [savoir gérer un site multilingue]"]]>1){
-        nb++;
-        total = total + values[data["Quelles sont vos compétences ? [savoir gérer un site multilingue]"]];
-    }
-    if(values[data["Quelles sont vos compétences ? [savoir gérer une communauté en ligne]"]]>1){
-        nb++;
-        total = total + values[data["Quelles sont vos compétences ? [savoir gérer une communauté en ligne]"]];
-    }
-    if(values[data["Quelles sont vos compétences ? [analyser des bases de données]"]]>1){
-        nb++;
-        total = total + values[data["Quelles sont vos compétences ? [analyser des bases de données]"]];
-    }
-    if(values[data["Quelles sont vos compétences ? [savoir prototyper des innovations numériques]"]]>1){
-        nb++;
-        total = total + values[data["Quelles sont vos compétences ? [savoir prototyper des innovations numériques]"]];
-    }
-    if(values[data["Quelles sont vos compétences ? [savoir gérer un projet]"]]>1){
-        nb++;
-        total = total + values[data["Quelles sont vos compétences ? [savoir gérer un projet]"]];
-    }
-    if(values[data["Quelles sont vos compétences ? [utiliser les méthodes agiles de développement]"]]>1){
-        nb++;
-        total = total + values[data["Quelles sont vos compétences ? [utiliser les méthodes agiles de développement]"]];
-    }
+    columns.forEach(function(element){
+        if(element.includes('Quelles sont vos compétences ?')){
+            if(values[data[element]]>1){
+                nb++;
+                total = total + values[data[element]];
+            }
+        }
+    });
 
     if(nb > 0)
         total = total/(3*nb);
@@ -528,117 +337,18 @@ function setCompetence(data){
 }
 
 function setOutil(data){
+    var columns = dataForm1.columns;
     var total = 0;
     var nb = 0;
 
-    if(values[data["Quelles outils utilisez vous ? [Photoshop]"]]>1){
-        nb++;
-        total = total + values[data["Quelles outils utilisez vous ? [Photoshop]"]];
-    }
-    if(values[data["Quelles outils utilisez vous ? [Illustrator]"]]>1){
-        nb++;
-        total = total + values[data["Quelles outils utilisez vous ? [Illustrator]"]];
-    }
-    if(values[data["Quelles outils utilisez vous ? [Gimp]"]]>1){
-        nb++;
-        total = total + values[data["Quelles outils utilisez vous ? [Gimp]"]];
-    }
-    if(values[data["Quelles outils utilisez vous ? [Inkscape]"]]>1){
-        nb++;
-        total = total + values[data["Quelles outils utilisez vous ? [Inkscape]"]];
-    }
-    if(values[data["Quelles outils utilisez vous ? [Dreamweaver]"]]>1){
-        nb++;
-        total = total + values[data["Quelles outils utilisez vous ? [Dreamweaver]"]];
-    }
-    if(values[data["Quelles outils utilisez vous ? [Kompozer]"]]>1){
-        nb++;
-        total = total + values[data["Quelles outils utilisez vous ? [Kompozer]"]];
-    }
-    if(values[data["Quelles outils utilisez vous ? [Premier]"]]>1){
-        nb++;
-        total = total + values[data["Quelles outils utilisez vous ? [Premier]"]];
-    }
-    if(values[data["Quelles outils utilisez vous ? [After Effect]"]]>1){
-        nb++;
-        total = total + values[data["Quelles outils utilisez vous ? [After Effect]"]];
-    }
-    if(values[data["Quelles outils utilisez vous ? [Eclipse]"]]>1){
-        nb++;
-        total = total + values[data["Quelles outils utilisez vous ? [Eclipse]"]];
-    }
-    if(values[data["Quelles outils utilisez vous ? [Sublime text]"]]>1){
-        nb++;
-        total = total + values[data["Quelles outils utilisez vous ? [Sublime text]"]];
-    }
-    if(values[data["Quelles outils utilisez vous ? [In design]"]]>1){
-        nb++;
-        total = total + values[data["Quelles outils utilisez vous ? [In design]"]];
-    }
-    if(values[data["Quelles outils utilisez vous ? [Final Cut]"]]>1){
-        nb++;
-        total = total + values[data["Quelles outils utilisez vous ? [Final Cut]"]];
-    }
-    if(values[data["Quelles outils utilisez vous ? [Blender]"]]>1){
-        nb++;
-        total = total + values[data["Quelles outils utilisez vous ? [Blender]"]];
-    }
-    if(values[data["Quelles outils utilisez vous ? [Sketchup]"]]>1){
-        nb++;
-        total = total + values[data["Quelles outils utilisez vous ? [Sketchup]"]];
-    }
-    if(values[data["Quelles outils utilisez vous ? [Unity]"]]>1){
-        nb++;
-        total = total + values[data["Quelles outils utilisez vous ? [Unity]"]];
-    }
-    if(values[data["Quelles outils utilisez vous ? [Wamp]"]]>1){
-        nb++;
-        total = total + values[data["Quelles outils utilisez vous ? [Wamp]"]];
-    }
-    if(values[data["Quelles outils utilisez vous ? [Xamp]"]]>1){
-        nb++;
-        total = total + values[data["Quelles outils utilisez vous ? [Xamp]"]];
-    }
-    if(values[data["Quelles outils utilisez vous ? [Mamp]"]]>1){
-        nb++;
-        total = total + values[data["Quelles outils utilisez vous ? [Mamp]"]];
-    }
-    if(values[data["Quelles outils utilisez vous ? [PhpMyAdmin]"]]>1){
-        nb++;
-        total = total + values[data["Quelles outils utilisez vous ? [PhpMyAdmin]"]];
-    }
-    if(values[data["Quelles outils utilisez vous ? [MySqlWorkbench]"]]>1){
-        nb++;
-        total = total + values[data["Quelles outils utilisez vous ? [MySqlWorkbench]"]];
-    }
-    if(values[data["Quelles outils utilisez vous ? [Cordova]"]]>1){
-        nb++;
-        total = total + values[data["Quelles outils utilisez vous ? [Cordova]"]];
-    }
-    if(values[data["Quelles outils utilisez vous ? [Bracket]"]]>1){
-        nb++;
-        total = total + values[data["Quelles outils utilisez vous ? [Bracket]"]];
-    }
-    if(values[data["Quelles outils utilisez vous ? [Flash]"]]>1){
-        nb++;
-        total = total + values[data["Quelles outils utilisez vous ? [Flash]"]];
-    }
-    if(values[data["Quelles outils utilisez vous ? [R]"]]>1){
-        nb++;
-        total = total + values[data["Quelles outils utilisez vous ? [R]"]];
-    }
-    if(values[data["Quelles outils utilisez vous ? [Visual Studio Code]"]]>1){
-        nb++;
-        total = total + values[data["Quelles outils utilisez vous ? [Visual Studio Code]"]];
-    }
-    if(values[data["Quelles outils utilisez vous ? [Ansible]"]]>1){
-        nb++;
-        total = total + values[data["Quelles outils utilisez vous ? [Ansible]"]];
-    }
-    if(values[data["Quelles outils utilisez vous ? [Ligne 29]"]]>1){
-        nb++;
-        total = total + values[data["Quelles outils utilisez vous ? [Ligne 29]"]];
-    }
+    columns.forEach(function(element){
+        if(element.includes('Quelles outils utilisez vous ?')){
+            if(values[data[element]]>1){
+                nb++;
+                total = total + values[data[element]];
+            }
+        }
+    });
 
     if(nb > 0)
         total = total/(3*nb);
@@ -647,43 +357,41 @@ function setOutil(data){
 }
 
 function setLangage(data){
+    var columns = dataForm1.columns;
     var total = 0;
     var nb = 0;
 
-    if(values[data['Quelles langues parlez vous ? [français]']]>1){
-        nb++;
-        total = total + values[data['Quelles langues parlez vous ? [français]']];
-    }
-    if(values[data['Quelles langues parlez vous ? [anglais]']]>1){
-        nb++;
-        total = total + values[data['Quelles langues parlez vous ? [anglais]']];
-    }
-    if(values[data['Quelles langues parlez vous ? [espagnol]']]>1){
-        nb++;
-        total = total + values[data['Quelles langues parlez vous ? [espagnol]']];
-    }
-    if(values[data['Quelles langues parlez vous ? [arabe]']]>1){
-        nb++;
-        total = total + values[data['Quelles langues parlez vous ? [arabe]']];
-    }
-    if(values[data['Quelles langues parlez vous ? [tamazirth]']]>1){
-        nb++;
-        total = total + values[data['Quelles langues parlez vous ? [tamazirth]']];
-    }
-    if(values[data['Quelles langues parlez vous ? [chinois]']]>1){
-        nb++;
-        total = total + values[data['Quelles langues parlez vous ? [chinois]']];
-    }
-    if(values[data['Quelles langues parlez vous ? [russe]']]>1){
-        nb++;
-        total = total + values[data['Quelles langues parlez vous ? [russe]']];
-    }
+    columns.forEach(function(element){
+        if(element.includes('Quelles langues parlez vous ?')){
+            if(values[data[element]]>1){
+                nb++;
+                total = total + values[data[element]];
+            }
+        }
+    });
 
     if(nb > 0)
         total = total/(3*nb);
     
     $("#langue").html("");
     $('#langue').data().perc = total;
+}
+
+function setLanguage(data){
+    var columns = dataForm1.columns;
+    var total = "";
+
+    columns.forEach(function(element){
+        if(element.includes('Quelles langages utilisez vous ?')){
+            start = element.indexOf("[") + 1;
+            end = element.indexOf("]");
+            BClist.push(element.substring(start, end));
+            if(values[data[element]]>0)
+                total = total + '<span class="general_lang">'+element.substring(start, end)+'</span> ';
+        }
+    });
+
+    $("#description").html(description+"<br><br>"+total);    
 }
 
 function setFramework(data){
@@ -771,36 +479,5 @@ function setFramework(data){
         $('#skill_12_pbar').data().perc = values[data['Quelles framework utilisez vous ? [.Net]']]/3;
     }else
         $("#skill_12_pbar_section").hide();
-
-}
-
-function setLanguage(data){
-    var total = "";
-
-    if(values[data['Quelles langages utilisez vous ? [C]']]>0)
-        total = total + '<span class="general_lang">C</span> ';
-    if(values[data['Quelles langages utilisez vous ? [C++]']]>0)
-        total = total + '<span class="general_lang">C++</span> ';
-    if(values[data['Quelles langages utilisez vous ? [PHP]']]>0)
-        total = total + '<span class="general_lang">PHP</span> ';
-    if(values[data['Quelles langages utilisez vous ? [Java]']]>0)
-        total = total + '<span class="general_lang">Java</span> ';
-    if(values[data['Quelles langages utilisez vous ? [C#]']]>0)
-        total = total + '<span class="general_lang">C#</span> ';
-    if(values[data['Quelles langages utilisez vous ? [javascript]']]>0)
-        total = total + '<span class="general_lang">JavaScript</span> ';
-    if(values[data['Quelles langages utilisez vous ? [cobol]']]>0)
-        total = total + '<span class="general_lang">Cobol</span> ';
-    if(values[data['Quelles langages utilisez vous ? [python]']]>0)
-        total = total + '<span class="general_lang">Python</span> ';
-    if(values[data['Quelles langages utilisez vous ? [Objectif C]']]>0)
-        total = total + '<span class="general_lang">Objectif C</span> ';
-    if(values[data['Quelles langages utilisez vous ? [Android]']]>0)
-        total = total + '<span class="general_lang">Android</span> ';
-        
-    $("#description").html(description+"<br><br>"+total);    
-}
-
-function setReseau(data){
 
 }
